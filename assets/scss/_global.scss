@@ -1,0 +1,88 @@
+/*** CSS Reset ***/
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** Mixins ***/
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*** Global Styles ***/
+
+html {
+  font-family: $main-font-family;
+  font-size: 18px;
+}
+
+body {
+  color: $black;
+  line-height: 1.5em;
+  background-color: $white;
+
+  a {
+    padding: 0 0.5rem;
+    text-decoration: none;
+    color: $black;
+    font-weight: 500;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+/*** Header ***/
+
+header {
+  width: 100vw;
+  min-height: 10vh;
+  @include flex-center;
+  border-bottom: 1px solid $blue;
+  /* background-color: $blue;
+  color: $white; */
+
+  ul {
+    list-style-type: none;
+    @include flex-center;
+
+    li {
+      padding: 0.5rem;
+
+      /* a {
+        padding: 0 0.5rem;
+        text-decoration: none;
+        color: $white;
+        font-weight: 500;
+
+        &:hover {
+          color: $lion;
+        }
+      } */
+    }
+  }
+}
+
+/*** Main ***/
+
+main {
+  width: 100vw;
+  min-height: 80vh;
+}
+
+/*** Footer ***/
+
+footer {
+  width: 100vw;
+  min-height: 10vh;
+  @include flex-center;
+  border-top: 1px solid $blue;
+}
