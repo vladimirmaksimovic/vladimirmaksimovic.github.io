@@ -8,3 +8,18 @@ $lion: #ffd900;
 
 /** font **/
 $main-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+/** responsive sizes **/
+$mobile-max: 640px;
+$tablet-min: 641px;
+$tablet-max: 1007px;
+$desktop-min: 1008px;
+$desktop-max: 1920px;
+
+/** mixins **/
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

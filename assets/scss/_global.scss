@@ -8,14 +8,6 @@
   box-sizing: border-box;
 }
 
-/*** Mixins ***/
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /*** Global Styles ***/
 
 html {
@@ -24,9 +16,12 @@ html {
 }
 
 body {
+  @include flex-center;
+  flex-direction: column;
   color: $black;
   line-height: 1.5em;
   background-color: $white;
+  background-image: url("../img/death-star-planet-sw-bg.jpg");
 
   a {
     padding: 0 0.5rem;
@@ -44,18 +39,19 @@ body {
 
 header {
   width: 100vw;
-  min-height: 10vh;
+  max-width: 1920px;
+  min-height: 5vh;
   @include flex-center;
   border-bottom: 1px solid $blue;
-  /* background-color: $blue;
-  color: $white; */
+  background-color: $white;
+  /* color: $white; */
 
   ul {
     list-style-type: none;
     @include flex-center;
 
     li {
-      padding: 0.5rem;
+      padding: 0 0.5rem;
 
       /* a {
         padding: 0 0.5rem;
@@ -75,14 +71,18 @@ header {
 
 main {
   width: 100vw;
-  min-height: 80vh;
+  max-width: 1920px;
+  min-height: 90vh;
+  background-color: $white;
 }
 
 /*** Footer ***/
 
 footer {
   width: 100vw;
-  min-height: 10vh;
+  max-width: 1920px;
+  min-height: 5vh;
   @include flex-center;
   border-top: 1px solid $blue;
+  background-color: $white;
 }
