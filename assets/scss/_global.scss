@@ -40,20 +40,30 @@ body {
 header {
   width: 100vw;
   max-width: 1920px;
-  min-height: 5vh;
+  min-height: 8vh;
   @include flex-center;
-  border-bottom: 1px solid $blue;
+  /* border-bottom: 1px solid $blue; */
   background-color: $white;
   /* color: $white; */
 
-  ul {
-    list-style-type: none;
-    @include flex-center;
+  nav {
+    width: inherit;
+    /* padding: 0 0.5rem; */
+    display: flex;
+    justify-content: space-between;
 
-    li {
-      padding: 0 0.5rem;
+    .brand {
+      font-size: 1.4rem;
+    }
 
-      /* a {
+    ul {
+      list-style-type: none;
+      @include flex-center;
+
+      li {
+        padding: 0 0.5rem;
+
+        /* a {
         padding: 0 0.5rem;
         text-decoration: none;
         color: $white;
@@ -63,6 +73,7 @@ header {
           color: $lion;
         }
       } */
+      }
     }
   }
 }
@@ -72,7 +83,8 @@ header {
 main {
   width: 100vw;
   max-width: 1920px;
-  min-height: 90vh;
+  min-height: 87vh;
+  padding: 0.5rem;
   background-color: $white;
 }
 
@@ -84,5 +96,10 @@ footer {
   min-height: 5vh;
   @include flex-center;
   border-top: 1px solid $blue;
-  background-color: $white;
+  background-color: $black;
+  color: $white;
+
+  a {
+    color: inherit;
+  }
 }
