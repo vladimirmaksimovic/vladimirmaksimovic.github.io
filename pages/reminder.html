@@ -1,120 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vladimir Maksimović" />
+    <!-- JS Script -->
+    <script src="../assets/js/main.js" defer></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>lion_tamer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Vladimir Maksimović" />
-  <!-- JS Script -->
-  <script src="../assets/js/main.js" defer></script>
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <title>lion_tamer</title>
-</head>
-
-<body>
-  <!-- header-->
-  <header>
-    <!-- main navbar -->
-    <nav>
-      <ul>
-        <li class="brand">
-          <a href="../index.html" class="brand-link">Home</a>
-        </li>
-        <li><a href="./about.html">About Me</a></li>
-        <li><a href="#">Reminder</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- main -->
-  <main>
-    <!-- <h1>Reminder Page</h1> -->
-
-    <!-- content container -->
-    <div class="content-container">
-      <!-- side navbar -->
-      <aside>
-        <!-- search -->
-        <!-- <input type="text" id="search" /> -->
-
-        <!-- aide navbar links -->
+  <body>
+    <!-- header-->
+    <header>
+      <!-- main navbar -->
+      <nav>
         <ul>
-          <li><a href="#">Kontni okvir</a></li>
-          <li><a href="#">Knjizenje ulaza materijala</a></li>
-          <li><a href="#">Link #3</a></li>
+          <li class="brand">
+            <a href="../index.html" class="brand-link">Home</a>
+          </li>
+          <li><a href="./about.html">About Me</a></li>
+          <li><a href="#">Reminder</a></li>
         </ul>
-      </aside>
+      </nav>
+    </header>
 
-      <!-- content articles -->
-      <article class="content">
-        <section>
-          <h3>Kontni okvir</h3>
-          <table>
-            <tbody>
-              <tr>
-                <td>0</td>
-                <td>/ osnovna sredstva</td>
-                <td>/ upisani a neuplaceni kapital</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>/ zalihe</td>
-                <td>/ zalihe i stalna sredstva namenjena prodaji</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>/ kupci, blagajna, tekuci racun</td>
-                <td>/ kratkorocna potrazivanja i plasmani, novcana sredstva i aktivna vremenska razgranicenja</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>/ kapital</td>
-                <td>/ ... </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>/ dobavljaci, obaveze</td>
-                <td>/ rezervisanja, obaveze i pasivna vremenska razgranicenja</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>/ rashodi</td>
-                <td>/ ... </td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>/ prihodi</td>
-                <td>/ ... </td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>/ otvaranje i zakljucak racuna stanja i uspeha</td>
-                <td>/ ... </td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>/ vanbilansna evidencija</td>
-                <td>/ ... </td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>/ obracun troskova i ucinaka</td>
-                <td>/ ... </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </article>
-    </div>
-  </main>
+    <!-- main -->
+    <main>
+      <!-- <h1>Reminder Page</h1> -->
 
-  <!-- footer -->
-  <footer>
-    @ copyright
-    <a href="https://github.com/vladimirmaksimovic/" target="_blank">Vladimir Maksimović</a>
-  </footer>
-</body>
+      <!-- content container -->
+      <div class="content-container">
+        <!-- side navbar -->
+        <aside>
+          <!-- search -->
+          <!-- <input type="text" id="search" /> -->
 
+          <!-- aide navbar links -->
+          <ul>
+            <li><a href="#kontni-ovir">Kontni okvir</a></li>
+            <li><a href="#ulaz-materijala">Knjizenje ulaza materijala</a></li>
+            <li><a href="#knjizenje-blagajne">Knjizenje blagajne</a></li>
+          </ul>
+        </aside>
+
+        <!-- content articles -->
+        <article class="content">
+          <section>
+            <h3 id="kontni-ovir">Kontni okvir</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>- osnovna sredstva</td>
+                  <td>- upisani a neuplaceni kapital</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>- zalihe</td>
+                  <td>- zalihe i stalna sredstva namenjena prodaji</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>- kupci, blagajna, tekuci racun</td>
+                  <td>
+                    - kratkorocna potrazivanja i plasmani, novcana sredstva i
+                    aktivna vremenska razgranicenja
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>- kapital</td>
+                  <td>- ...</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>- dobavljaci, obaveze</td>
+                  <td>
+                    - rezervisanja, obaveze i pasivna vremenska razgranicenja
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>- rashodi</td>
+                  <td>- ...</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>- prihodi</td>
+                  <td>- ...</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>- otvaranje i zakljucak racuna stanja i uspeha</td>
+                  <td>- ...</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>- vanbilansna evidencija</td>
+                  <td>- ...</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>- obracun troskova i ucinaka</td>
+                  <td>- ...</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h3 id="ulaz-materijala">Knjizenje ulaza materijala</h3>
+            <ol>
+              <li>Izabrati komitenta po obracunu</li>
+              <li>Promene -> Nalog za knjizenje sa datumom knjizenja</li>
+              <li>Izabrati nalog/datum prema periodu/datumu obracuna</li>
+              <li>Knjiziti po licu koje predaje materijal</li>
+            </ol>
+            <table>
+              <tbody>
+                <tr>
+                  <td>101000</td>
+                  <td>- materijal za izradu</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>287277</td>
+                  <td>- PDV nispravni neplacena nadoknada poljoprivredniku</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>435000</td>
+                  <td>- Dobavljaci</td>
+                </tr>
+              </tbody>
+            </table>
+            <ol start="5">
+              <li>
+                Nakon kljizenja ulaza materijala proknjiziti PDV na nalogu gde
+                su dobavljaci placeni
+              </li>
+            </ol>
+            <table>
+              <tbody>
+                <tr>
+                  <td>287000</td>
+                  <td>- PDV nadoknada poljoprivrednicima</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>287277</td>
+                  <td>- PDV nispravni neplacena nadoknada poljoprivredniku</td>
+                </tr>
+              </tbody>
+            </table>
+            <ol start="6">
+              <li>Proveriti kartice konta u glavnoj knjizi.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3 id="knjizenje-blagajne">
+              Knjizenje blagajne - isplata gotovine
+            </h3>
+            <ol>
+              <li>Izabrati komitenta po obracunu</li>
+              <li>Promene -> Nalog za knjizenje sa datumom knjizenja</li>
+              <li>Izabrati nalog/datum prema periodu/datumu obracuna</li>
+              <li>Knjiziti po licu koje predaje materijal</li>
+            </ol>
+            <table>
+              <tbody>
+                <tr>
+                  <td>101000</td>
+                  <td>- materijal za izradu</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>287277</td>
+                  <td>- PDV nispravni neplacena nadoknada poljoprivredniku</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>435000</td>
+                  <td>- Dobavljaci</td>
+                </tr>
+              </tbody>
+            </table>
+            <ol start="5">
+              <li>
+                Nakon kljizenja ulaza materijala proknjiziti PDV na nalogu gde
+                su dobavljaci placeni
+              </li>
+            </ol>
+            <table>
+              <tbody>
+                <tr>
+                  <td>287000</td>
+                  <td>- PDV nadoknada poljoprivrednicima</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>287277</td>
+                  <td>- PDV nispravni neplacena nadoknada poljoprivredniku</td>
+                </tr>
+              </tbody>
+            </table>
+            <ol start="6">
+              <li>Proveriti kartice konta u glavnoj knjizi.</li>
+            </ol>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      @ copyright
+      <a href="https://github.com/vladimirmaksimovic/" target="_blank"
+        >Vladimir Maksimović</a
+      >
+    </footer>
+  </body>
 </html>
