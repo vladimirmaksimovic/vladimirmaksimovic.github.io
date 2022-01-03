@@ -1,3 +1,29 @@
 /*** Imports ***/
 @import "variables";
 @import "global";
+
+/*** Home Page ***/
+
+/*** About Me Page ***/
+
+/*** Reminder Page ***/
+
+.content-container {
+  /* width: 100vw;
+  max-width: 1440px;
+  min-height: 91vh; */
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  li {
+    padding: 0 0 0.5rem 0.5rem;
+
+    a {
+      padding: 0;
+    }
+  }
+
+  .content {
+    padding: 0.5rem;
+  }
+}
