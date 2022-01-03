@@ -39,29 +39,32 @@ body {
 
 header {
   width: 100vw;
-  max-width: 1920px;
-  min-height: 8vh;
+  max-width: $desktop-mid;
+  min-height: 6vh;
   @include flex-center;
   /* border-bottom: 1px solid $blue; */
   background-color: $white;
   /* color: $white; */
 
   nav {
-    width: inherit;
-    /* padding: 0 0.5rem; */
+    /* width: inherit;
+    padding: 0 0.5rem; */
     display: flex;
     justify-content: space-between;
 
-    .brand {
-      font-size: 1.4rem;
-    }
-
     ul {
+      width: 100vw;
+      max-width: $desktop-mid;
       list-style-type: none;
-      @include flex-center;
+      /* @include flex-center; */
+      display: flex;
 
       li {
         padding: 0 0.5rem;
+
+        .brand-link {
+          font-size: 1.4rem;
+        }
 
         /* a {
         padding: 0 0.5rem;
@@ -74,6 +77,10 @@ header {
         }
       } */
       }
+
+      .brand {
+        margin-right: auto;
+      }
     }
   }
 }
@@ -82,18 +89,22 @@ header {
 
 main {
   width: 100vw;
-  max-width: 1920px;
-  min-height: 87vh;
+  max-width: $desktop-mid;
+  min-height: 91vh;
   padding: 0.5rem;
   background-color: $white;
+
+  h1 {
+    text-align: center;
+  }
 }
 
 /*** Footer ***/
 
 footer {
   width: 100vw;
-  max-width: 1920px;
-  min-height: 5vh;
+  max-width: $desktop-mid;
+  min-height: 3vh;
   @include flex-center;
   border-top: 1px solid $blue;
   background-color: $black;
