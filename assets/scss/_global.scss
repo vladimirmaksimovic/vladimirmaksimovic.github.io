@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   color: $black;
   line-height: 1.5em;
+  letter-spacing: 0.25px;
   background-color: $white;
   background-image: url("../img/death-star-planet-sw-bg.jpg");
 
@@ -33,6 +34,18 @@ body {
       color: $blue;
     }
   }
+}
+
+h3 {
+  padding: 0 0 0.5rem 0;
+}
+
+section {
+  padding: 0 0 0.5rem 0;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 /*** Header ***/

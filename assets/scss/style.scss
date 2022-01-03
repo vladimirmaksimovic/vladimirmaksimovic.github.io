@@ -24,6 +24,18 @@
   }
 
   .content {
-    padding: 0.5rem;
+    padding: 0 0.5rem;
+
+    tr {
+      td {
+        padding: 0.25rem;
+        border-bottom: 1px solid $blue;
+      }
+
+      &:hover {
+        background-color: $transparent;
+        cursor: pointer;
+      }
+    }
   }
 }
