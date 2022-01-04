@@ -14,10 +14,11 @@
   min-height: 91vh; */
   display: grid;
   grid-template-columns: 1fr 4fr;
+  gap: 1rem;
 
-  h3 {
+  /* h3 {
     color: $blue;
-  }
+  } */
 
   ul {
     position: fixed;
@@ -37,7 +38,7 @@
     tr {
       td {
         padding: 0.25rem;
-        border-bottom: 1px solid $blue;
+        border-bottom: 1px solid $white;
       }
 
       &:hover {

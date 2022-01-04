@@ -12,7 +12,7 @@
 
 html {
   font-family: $main-font-family;
-  font-size: 15px;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -38,21 +38,52 @@ body {
 }
 
 h3 {
-  padding: 0 0 0.5rem 0;
+  padding: 0.5rem 0;
 }
 
 section {
   padding: 0 0 1rem 0;
+  border-bottom: 1px solid $grey;
 }
 
 table {
   border-collapse: collapse;
-  margin: 0 0 0.5rem 0;
+  margin: 1rem 0;
+  font-size: 0.9rem;
   background-color: $grey;
+  box-shadow: 3px 6px 13px 4px rgba(0, 0, 0, 0.76);
 }
 
 ol {
   padding: 0 0 0 2rem;
+}
+
+/*** Back to top ***/
+
+.to-top-btn {
+  position: fixed;
+  right: 3.5rem;
+  bottom: 2.5rem;
+  padding: 1rem 0.5rem;
+  border: 1px solid $lion;
+  border-radius: 50%;
+  background: none;
+
+  a {
+    padding: 1rem;
+    color: $lion;
+    font-weight: 700;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+    border: 1px solid $blue;
+
+    a {
+      color: $blue;
+    }
+  }
 }
 
 /*** Header ***/
