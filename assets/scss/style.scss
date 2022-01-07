@@ -37,8 +37,12 @@
 
     tr {
       td {
-        padding: 0.25rem;
+        padding: 0.25rem 0 0.25rem 0.5rem;
         border-bottom: 1px solid $white;
+      }
+
+      &:nth-child(odd) {
+        background-color: $grey;
       }
 
       &:hover {
