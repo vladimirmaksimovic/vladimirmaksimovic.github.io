@@ -2,12 +2,6 @@
 @import "variables";
 @import "global";
 
-/*** Home Page ***/
-
-/*** About Me Page ***/
-
-/*** Reminder Page ***/
-
 .content-container {
   /* width: 100vw;
   max-width: 1440px;
@@ -48,6 +42,45 @@
       &:hover {
         background-color: $transparent;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+/*** Home Page ***/
+
+/*** About Me Page ***/
+
+/*** Reminder Page ***/
+
+
+/*** Instructions Page ***/
+
+.instructions {
+  padding: 1rem;
+  font-family: $secondary-font-family;
+
+  h1, h2 {
+    padding: 0.5rem 0 1rem 0;
+  }
+
+  article {
+
+    ul {
+      padding: 0 1.5rem 1rem 1.5rem;
+    }
+
+    a {
+      padding: 0.25rem;
+      color: $blue;
+      font-style: italic;
+      text-decoration: underline;
+
+      &:hover {
+        background-color: $blue;
+        color: $white;
+        border-radius: 3px;
+        text-decoration: none;
       }
     }
   }
