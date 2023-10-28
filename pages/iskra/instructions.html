@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vladimir Maksimović" />
+    <!-- JS Script -->
+    <script src="../../assets/js/main.js" defer></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <title>lion_tamer</title>
+  </head>
+
+  <body>
+    <!-- header-->
+    <header id="page-top">
+      <!-- main navbar -->
+      <nav>
+        <ul class="main-navbar">
+          <li class="brand">
+            <a href="../../index.html" class="brand-link">Home</a>
+          </li>
+          <li><a href="../about.html">About Me</a></li>
+          <li>
+            <a href="../reminder.html">Reminder &darr;</a>
+            <ul class="reminder-nav">
+              <li><a href="./book-keep-agency.html">Agencija</a></li>
+              <li><a href="./school-dt.html">Dimitrije</a></li>
+              <li><a href="./school-sm.html">Svetozar</a></li>
+              <li><a href="./school-sn.html">Nemanja</a></li>
+              <li><a href="#">Uputstva</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="instructions">
+      <h1>Uputstva za rad u aplikacijama</h1>
+
+      <!-- to top btn -->
+      <button class="to-top-btn"><a href="#page-top">Up</a></button>
+
+      <article class="instruction">
+        <h2>SeF - Sistem elektronskih faktura</h2>
+        <ul>
+          <li>Prijava na sistem:
+            <ul>
+              <li>Adresa: <a href="https://efaktura.mfin.gov.rs/login" target="_blank">https://efaktura.mfin.gov.rs/login</a></li>
+              <li>Zeleno dugme "e-faktura"</li>
+              <li>Prijavi se</li>
+              <li>Kvalifikovani elektronski sertifikat</li>
+              <li>Prijavite se</li>
+              <li>Izabrati sertifikat</li>
+              <li>Pin</li>
+            </ul>
+          </li>
+          <li>Rad sa fakturama:
+            <ul>
+              <li>Izabrati dobavljaca koji je postavio fakturu</li>
+              <li>Pregledati/sravniti fakturu</li>
+              <li>Prihvatanje fakture &rarr; dugme "Potvrdite"</li>
+              <li>Preuzimanje fakture &rarr; Preuzmi PDF</li>
+              <li>Stampa fakture</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+      
+      <article class="instruction">
+        <h2>ePP - Elektronski platni promet</h2>
+        <ul>
+          <li>Prijava na sistem:
+            <ul>
+              <li>Adresa: <a href="https://epp.trezor.gov.rs/" target="_blank">https://epp.trezor.gov.rs/</a></li>
+            </ul>
+          </li>
+          <li>Izvodi:
+            <ul>
+              <li>Izabrati karticu "Racuni"</li>
+              <li>Izabrati racun za koji se stampa izvod</li>
+              <li>Izabrati karticu "Izvodi"</li>
+              <li>U kalendaru izabrati datum izvoda</li>
+            </ul>
+          </li>
+          <li>Provera partnera:
+            <ul>
+              <li>Kartica "Partneri"</li>
+              <li>Pretraga partnera (po vise kriterijuma)</li>
+              <li>Ako partner ne postoji ili postoje promene kod postojeceg partnera:
+                <ul>
+                  <li>Izabrati opciju "Novi partner"</li>
+                  <li>Uneti podatke o novom partneru</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Nalozi:
+            <ul>
+              <li>Novi nalog:
+                <ul>
+                  <li>sifra placanja:
+                    <ul>
+                      <li>221 - registrovano u CRF</li>
+                      <li>240 - oporezivo</li>
+                      <li>241 - neoporezivo</li>
+                      <li>290 - ako nije registrovano u CRF-u</li>
+                    </ul>
+                  </li>
+                  <li>racun platioca - bira se iz liste</li>
+                  <li>model = 97</li>
+                  <li>BPB (poziv na broj zaduzenja) - racuna se posebno kroz aplikaciju</li>
+                  <li>racun primaoca - pretraga po imenu ili racunu</li>
+                  <li>PBO (poziv na broj odobrenja) - registrovani broj racuna iz CRF-a</li>
+                  <li>Kreiraj nalog</li>
+                </ul>
+              </li>
+              <li>Placanje:</li>
+                <ul>
+                  <li>Provera naloga - i kroz opciju stampe naloga</li>
+                  <li>Ako je nalog ispravno kreiran cekira se kvadrat/opcija ispred naloga</li>
+                  <li>izaberati plavo dugme u gornjem desnom uglu "Placanje"</li>
+                  <li>klikom na "Placanje" ePP salje broj tokena na skolski email</li>
+                  <li>kopirati broj tokena iz email-a i uneti u ePP aplikaciju</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+      
+      <article class="instruction">
+        <h2>ISKRA - aplikacija za plate i obustave</h2>
+        <ul>
+          <li>Prijava na sistem:
+            <ul>
+              <!-- <li>Adresa: <a href="https://epp.trezor.gov.rs/" target="_blank">https://epp.trezor.gov.rs/</a></li> -->
+              <li>Link poslta u email-u</li>
+            </ul>
+          </li>
+          <li>SAP produkcija:
+            <ul>
+              <li>Administrator obracuna maticne skole (99% za platu i bolovanje)</li>
+            </ul>
+          </li>
+          <li>Obustave:
+            <ul>
+              <li>Provera kreditora:
+                <ul>
+                  <li>Administrator kreditora i bus rute</li>
+                  <li>Provera kreditora preko tekuceg racuna:
+                    <ul>
+                      <li>Unosi se broj tekuceg racuna bez crtica</li>
+                      <li>Neophodno je uneti racun ima 18 cifara</li>
+                      <li>popuniti sa nulama ukoliko racun nema 18 cifara</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Pronalazak radnika kome se unosi obustava:
+                <ul>
+                  <li>Odrazavanje kadrovskih podataka za obracunske sluzbe</li>
+                  <li>Odrazavanje HR maticnih podataka</li>
+                  <li>Kartica "Podaci za obracun plata"</li>
+                  <li>"Slobodno trazenje" u meniju sa leve strane</li>
+                  <li>Cekirati opciju "Oragnizaciona dodela" - trece od vrha</li>
+                  <li>Strelicom na nju se trazi "Kadrovska oblast"</li>
+                  <li>Cekirati "Odabir vrednosti" u koloni</li>
+                  <li>U polje "Vrednost" uneti "OKHN" (U ISKRI kadrovksa oblast nase skole je OKHN)</li>
+                  <li>u donjem desnom uglu kliknuti na "Prenesi listu pronadjenih pojmova"</li>
+                  <li>kliknuti na dugme sa leve strane sa "strelicom na dole i okom"</li>
+                  <li>iz liste izabrati zaposlenog dvoklikom</li>
+                </ul>
+              </li>
+              <li>uci u karticu "Podaci za obracun plata"</li>
+              <li>Cekirati "Obustave"</li>
+              <li>Uneti datum prvog dana u listu obraunskog perioda plate</li>
+              <li>"ENTER" otvara "Info tip: obustave" u donjem delu</li>
+              <li>Pronaci "pod tip" (TpP)</li>
+              <li>Izlazi lista sa siframa/tipovima obustava</li>
+              <li>Cekirati tip obustave</li>
+              <li>"Kreiraj" u gornjem levom uglu</li>
+              <li>"Sacuvaj"</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      @ copyright
+      <a href="https://github.com/vladimirmaksimovic/" target="_blank"
+        >Vladimir Maksimović</a
+      >
+    </footer>
+  </body>
+</html>
