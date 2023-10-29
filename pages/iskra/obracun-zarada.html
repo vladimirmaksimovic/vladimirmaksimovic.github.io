@@ -14,13 +14,15 @@
 
   <body>
     <!-- header-->
-    <header id="page-top">
+    <header id="page-top" class="header">
       <!-- main navbar -->
+      <ul class="brand">
+        <li>
+          <a href="../../index.html" class="brand-link">Home</a>
+        </li>
+      </ul>
       <nav>
         <ul class="main-navbar">
-          <li class="brand">
-            <a href="../../index.html" class="brand-link">Home</a>
-          </li>
           <li><a href="../about.html">About Me</a></li>
           <li>
             <a href="../iskra.html">ISKRA &darr;</a>
@@ -263,13 +265,63 @@
                 <li>
                   Provera kreditora
                   <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Administrator obracuna plata</li>
+                    <li>Provera kreditora</li>
+                    <li>
+                      Bankovni racun - uneti broj racuna kreditora iz obuustave
+                    </li>
+                    <li>
+                      IZVRSI (<em>opcija/btn</em>) - dobija se tabelarni prikaz
+                      kreditora pod trzenim tekucim racunom
+                    </li>
+                    <li>
+                      Zabeleziti/zapisati <em>sifru</em> (<em>nova sifra</em>)
+                      kreditora u redu koji je obojen zelenom bojom
+                    </li>
+                    <li>
+                      ukoliko trazeni kreditor ne postoji, potrebno je popuniti
+                      sablon (tabelu) i poslati na email
+                      <em>Centra za odrzavanje kreditora</em> (email i podaci
+                      Centra su poslati na email skole)
+                    </li>
                   </ul>
                 </li>
-                <li>Unos obustava</li>
+                <li>
+                  Unos obustava
+                  <ul>
+                    <li>Odrzavaj HR maticne podatke</li>
+                    <li>Podaci zza obracun plata</li>
+                    <li>Obustave - info tip</li>
+                    <li>ENTER (<em>btn</em>)</li>
+                    <li>
+                      Pristupiti info pod tipovima Obustava kroz
+                      opciju/polje/btn <em>TpP</em>
+                    </li>
+                    <li>Krediti/obustave - info pod tip</li>
+                    <em>PERIOD - u poljima <em>Od: i do:</em> definissemo datume pocetka i kraja obustave (Za pocetak obustave uvek se unosi prvi dan u mesecu za period/mesec u kojem obustava treba da pocne, npr. <em>Od: 01092023</em> - ova obustava pocinje da se odbija od septembarske plate u 2023. godini u oktobru.)</li>
+                    <li>KREIRAJ (<em>btn</em>)</li>
+                    <li>Datum placanja (<em>kartica</em>)</li>
+                    <li>Ukupan dug (<em>polje</em>) - usnosi se ukupan dug obustave</li>
+                    <li>Iznos rate (<em>polje</em>) - unosi se iznos rate (Ukoliko se obustava odbija od oba dela plate, poterbno je iznos rate preracunati, tj. podeliti na dva dela. Broj rata u ISKRi se izracunava automatski.)</li>
+                    <li>Model i poziv na broj (<em>polja</em>) - unose se poziv na broj naznacen u obustavi/administrativnoj zabrani i/ili model</li>
+                    <li>ENTER (<em>keybord/btn</em>)</li>
+                    <li>Vrsta obracuna (<em>kartica</em>)
+                      <ul>
+                        <li>Akontacija</li>
+                        <li>Konacan obracun</li>
+                        <li>Bolovanje > 30 dana</li>
+                      </ul>
+                    </li>
+                    <li>Primalac (<em>kartica</em>)
+                      <ul>
+                        <li>Kluc primaoca placanja (<em>polje</em>) - unosi se sifra kreditora koju smo zapisali prilikom provere kreditora</li>
+                        <li>ENTER (<em>btn</em>)</li>
+                      </ul>
+                    </li>
+                    <li>SACUVAJ (<em>btn</em>)</li>
+                    <li>Prikazi (<em>opcija/btn</em>) - prvera/kontrola unete obustave</li>
+                  </ul>
+                </li>
               </ol>
             </ul>
           </section>
