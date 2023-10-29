@@ -54,7 +54,10 @@
 
     <!-- main -->
     <main>
-      <h1>Obracun zarada</h1>
+      <article class="main-heading">
+        <h1>Obracun zarada</h1>
+        <h4>Uputstvo za obracun zarada u aplikaciji ISKRA</h4>
+      </article>
 
       <!-- to top btn -->
       <button class="to-top-btn"><a href="#page-top">Up</a></button>
@@ -68,21 +71,211 @@
 
           <!-- aide navbar links -->
           <ul>
-            <li><a href="#kontni-ovir">Kontni okvir</a></li>
-            <li><a href="#konta">Konta</a></li>
-            <li><a href="#ulaz-materijala">Ulaz materijala</a></li>
-            <li><a href="#knjizenje-blagajne">Blagajna</a></li>
-            <li><a href="#knjizenje-ugovor-o-delu">Ugovor o delu</a></li>
-            <li><a href="#invoitix">Invoitix - devize</a></li>
-            <li><a href="#prodaja-deviza">Prodaja deviza</a></li>
-            <li><a href="#knjizenje-obracuna-zarada">Obracun zarada</a></li>
+            <li>
+              <a href="#odrzavanje-kadrovskih-podataka"
+                >Odrzavanje kadrovskih podataka</a
+              >
+            </li>
+            <li><a href="#konta">Generisanje karneta</a></li>
+            <li><a href="#ulaz-materijala">Potvrda unosa podataka</a></li>
+            <li>
+              <a href="#knjizenje-blagajne">Pracenje statusa parametara</a>
+            </li>
+            <li>
+              <a href="#knjizenje-ugovor-o-delu"
+                >Potvrda ispravnosti obracuna</a
+              >
+            </li>
+            <li><a href="#invoitix">Podnosenje poreske prijave</a></li>
+            <li><a href="#prodaja-deviza">Ispravka nesipravnih virmana</a></li>
+            <!-- <li><a href="#knjizenje-obracuna-zarada">Obracun zarada</a></li>
             <li><a href="#isplata-zarada">Isplata zarada</a></li>
-            <li><a href="#licna-zarada">Licna zarada</a></li>
+            <li><a href="#licna-zarada">Licna zarada</a></li> -->
           </ul>
         </aside>
 
         <!-- content articles -->
         <article class="content">
+          <section>
+            <ol>
+              <li>Odrzavanje kadrovskih podataka za obracunske sluzbe</li>
+              <li>Generisanje karneta za usnos radnih sati zaposlenih</li>
+              <li>Potvrda unosa kadrovskih/vremenskih podataka</li>
+              <li>Pracenje statusa parametara</li>
+              <li>Potvrda ispravnosti obracuna</li>
+              <li>Podnosenje poreske prijave</li>
+              <li>Ispravka nesipravnih virmana</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3 id="odrzavanje-kadrovskih-podataka">
+              Odrzavanje kadrovskih podataka za obracunske sluzbe
+            </h3>
+
+            <ul>
+              <li>Odrzavaj kadrovske podatke</li>
+              <li>Slobodno trazenje</li>
+              <li>Organizaciona dodela</li>
+              <li>Kadrovska oblast</li>
+              <li>Kolona <em>Odabir</em>, selektovati polje</li>
+              <li>
+                U polje <em>Vrednost</em> uneti kadrovsku oblast skole, npr.
+                <em>OKH_</em>
+              </li>
+              <li>Prenesi listu pronadjenih pojmova (<em>btn</em>)</li>
+              <li>Odabrati zaposlenog iz liste zaposlenih</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Info tipovi</h4>
+            <p>
+              Osnovni info tipovi u kartici
+              <em>Podaci za obracun plata</em>:
+            </p>
+            <ol style="list-style-type: lower-latin">
+              <li>Planirano radno vreme</li>
+              <li>Osnovna plata</li>
+              <li>Podaci banke</li>
+            </ol>
+            <p>
+              Ovo su obavezni info tipovi, sto znaci da ukoliko neki od ovih
+              info tipova ne postoji u kartici za izabranog zaposlenog, on se
+              nece pojaviti u obracunu zarada.
+            </p>
+            <p>Podaci info tipa <em>Planirano radno vreme</em>:</p>
+            <ul>
+              <li>Norma</li>
+              <li>Dnevno radno vreme - preracunato prema unetoj normi</li>
+            </ul>
+            <p>Podaci info tipa <em>Osnovna plata</em>:</p>
+            <ul>
+              <li>Osnovni koeficijent</li>
+              <li>Dodatni koeficijent (osim staresinstva)</li>
+            </ul>
+            <p>
+              U info tipu <em>Podaci banke</em> nalaze se podaci o tekucem
+              racunu na koji zaposleni prima platu.
+            </p>
+          </section>
+
+          <section>
+            <h4>Periodicna placnja/odbici i Info pod tipovi</h4>
+            <p>
+              Info tip <em>Periodicna placnja/odbici</em> sadrzi i
+              <em>Info pod tipove</em> koji se biraju iz sekundarnog menija.
+            </p>
+            <p>Izbor info pod tipova <em>Periodicna placanja/odbici</em>:</p>
+            <ul>
+              <li>Periodicna placanja i odbici</li>
+              <li>ENTER (<em>btn</em>)</li>
+              <li>
+                Klikom na <em>TpP</em> otvara se sekundarni meni za izbor info
+                pod tipova
+              </li>
+            </ul>
+            <p>
+              Posebno bitni info pod tipovi za obracun zarada u prosveti su:
+            </p>
+            <ol style="list-style-type: lower-latin">
+              <li>Staresinstvo</li>
+              <li>Prekonormni rad</li>
+            </ol>
+          </section>
+          <section>
+            <h4>Staresinstvo</h4>
+            <p>Kreiranje/unos staresinstva:</p>
+            <ul>
+              <li>Periodicna placanja/odbici - info tip</li>
+              <li>Staresinstvo - info pd tip</li>
+              <li>
+                U slekciji <em>Period</em> uneti pocetak i/ili kraj perioda
+                staresinstva u polja <em>Od:</em> i <em>Do:</em> (Ukoliko
+                staresinstvo vazi od pocetka meseca onda u polje
+                <em>Od:</em> uneti datum prvog dela meseca obracunskog perioda,
+                npr. <em>Od: 01092023</em>, a ukoliko nije poznnato do kada ce
+                zapossleni primati naknadu polje <em>Do:</em> ostaviti prazno.)
+              </li>
+              <li>KREIRAJ (<em>opcija/btn</em>)</li>
+              <li>
+                Procenat staresinstva se unosi u polje
+                <em>Broj/jedinica</em> (Za sve zaposlene je procenat
+                staresinstva 4% gde se u prvu polovinu polja unosi broj 4, a u
+                drugoj polovni polja se bira <em>Procenat</em> iz sifrarnika.)
+              </li>
+              <li>SACUVAJ (<em>btn</em>)</li>
+              <li>PRIKAZI (<em>opcija/btn</em>)</li>
+            </ul>
+            <p>Zatvaranje/gasenje staresinstva:</p>
+            <ul>
+              <li>Periodicna placanja/odbici - info tip</li>
+              <li>Staresinstvo - info pd tip</li>
+              <li>Period - ostaviti prazno</li>
+              <li>
+                RAZGRANICI (<em>opcija/btn</em>) - uneti prvi dan u mesecu od
+                kojeg se staresinstvo gasi, npr. <em>01092023</em>
+              </li>
+              <li>
+                PRENESI (<em>opcija/btn</em>) - sselektovati u tabelarnom
+                prikazu red u kojem se nalaze podaci o razgranicenju
+                staresinstva
+              </li>
+              <li>RAZGRANICI (<em>opcija/btn</em>)</li>
+              <li>PRIKAZI (<em>opcija/btn</em>)</li>
+            </ul>
+          </section>
+          <section>
+            <h4>Prekonormni rad</h4>
+            <p>
+              Info pod tip <em>Prekonormni rad</em> se unosi i gasi isto kao
+              info pod tip <em>Staresinstvo</em>. Takodje, Prekonormni rad ne
+              moze bit veci od 30%, tj. aplikacija ne dozvolja veci unos.
+            </p>
+            <p>
+              Prekonormin rad je potrebno menjati samo za vreme raspusta i to
+              putem opcije <em>KOPIRAJ</em> kako bi u sistemu ostao zapis
+              predhodne promene:
+            </p>
+            <ul>
+              <li>Periodicna placanja/odbici - info tip</li>
+              <li>Prekonormni rad - info pd tip</li>
+              <li>KOPIRAJ (<em>opcija/btn</em>)</li>
+              <li>
+                U polja <em>Poc.:</em> i <em>do:</em> uneti period u kojem se
+                menja prekonormni rad, npr. ako je promena u januaru 2023
+                <em>Poc.: 01012023 do: 31012023</em>
+              </li>
+              <li>Broj/jedinica: <em>preracunat iznos / procenat</em></li>
+              <li>SACUVAJ (<em>btn</em>)</li>
+              <li>PREGLED (<em>opcija/btn</em>)</li>
+            </ul>
+          </section>
+          <section>
+            <h4>Obustave</h4>
+            <ul>
+              <li>Odrzavaj HR maticne podatke</li>
+              <li>Podaci za obracun plata</li>
+              <li>Obustave - info tip</li>
+              <li>ENTER (<em>btn/keyboard</em>)</li>
+              <p>Kreiranje nove obustave:</p>
+              <ol style="list-style-type: lower-latin">
+                <li>
+                  Provera kreditora
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </li>
+                <li>Unos obustava</li>
+              </ol>
+            </ul>
+          </section>
+        </article>
+
+        <!-- <article class="content">
           <section>
             <h3 id="kontni-ovir">Kontni okvir</h3>
             <table>
@@ -583,7 +776,7 @@
               </tbody>
             </table>
           </section>
-        </article>
+        </article> -->
       </div>
     </main>
 

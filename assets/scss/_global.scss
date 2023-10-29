@@ -50,9 +50,54 @@ h3 {
   padding: 0.5rem 0;
 }
 
-section {
-  padding: 0 0 1rem 0;
-  border-bottom: 1px solid $grey;
+.content-container {
+  /* width: 100vw;
+  max-width: 1440px;
+  min-height: 91vh; */
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+
+  h4 {
+    padding: 0.75rem 0 0 0;
+  }
+
+  .content {
+    padding: 0 0.5rem;
+    border-bottom: 1px solid $grey;
+
+    ul, ol {
+      padding: 0 0 0.5rem 2rem;
+
+      li {
+        padding: 0;
+      }
+    }
+
+    tr {
+      td {
+        padding: 0.25rem 0 0.25rem 0.5rem;
+        border-bottom: 1px solid $white;
+      }
+
+      &:nth-child(odd) {
+        background-color: $grey;
+      }
+
+      &:hover {
+        background-color: $transparent;
+        cursor: pointer;
+      }
+    }
+
+    section {
+      padding: 0.5rem 0;
+
+      p {
+        padding: 0.5rem 0 0 0;
+      }
+    }
+  }
 }
 
 table {
@@ -67,10 +112,6 @@ table {
 
 ul {
   padding: 0;
-}
-
-ol {
-  padding: 0 0 0 2rem;
 }
 
 /*** Back to top ***/
@@ -191,8 +232,31 @@ main {
   padding: 0.5rem;
   background-color: $light-grey;
 
-  h1 {
+  aside {
+    ul {
+      position: fixed;
+  
+      li {
+        padding: 0 0 0.5rem 0.5rem;
+  
+        a {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .main-heading {
+    padding: 0.5rem 0;
     text-align: center;
+
+    h1 {
+      padding: 0.5rem 0;
+    }
+
+    h4 {
+      font-style: italic;
+    }
   }
 }
 
