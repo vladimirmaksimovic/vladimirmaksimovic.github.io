@@ -78,10 +78,14 @@
                 >Odrzavanje kadrovskih podataka</a
               >
             </li>
-            <li><a href="#konta">Generisanje karneta</a></li>
-            <li><a href="#ulaz-materijala">Potvrda unosa podataka</a></li>
+            <li><a href="#generisanje-karneta">Generisanje karneta</a></li>
             <li>
-              <a href="#knjizenje-blagajne">Pracenje statusa parametara</a>
+              <a href="#potvrda-unosa-podataka">Potvrda unosa podataka</a>
+            </li>
+            <li>
+              <a href="#pracenje-statusa-parametara"
+                >Pracenje statusa parametara</a
+              >
             </li>
             <li>
               <a href="#knjizenje-ugovor-o-delu"
@@ -185,6 +189,7 @@
               <li>Prekonormni rad</li>
             </ol>
           </section>
+
           <section>
             <h4>Staresinstvo</h4>
             <p>Kreiranje/unos staresinstva:</p>
@@ -227,6 +232,7 @@
               <li>PRIKAZI (<em>opcija/btn</em>)</li>
             </ul>
           </section>
+
           <section>
             <h4>Prekonormni rad</h4>
             <p>
@@ -253,6 +259,7 @@
               <li>PREGLED (<em>opcija/btn</em>)</li>
             </ul>
           </section>
+
           <section>
             <h4>Obustave</h4>
             <ul>
@@ -298,28 +305,56 @@
                       opciju/polje/btn <em>TpP</em>
                     </li>
                     <li>Krediti/obustave - info pod tip</li>
-                    <em>PERIOD - u poljima <em>Od: i do:</em> definissemo datume pocetka i kraja obustave (Za pocetak obustave uvek se unosi prvi dan u mesecu za period/mesec u kojem obustava treba da pocne, npr. <em>Od: 01092023</em> - ova obustava pocinje da se odbija od septembarske plate u 2023. godini u oktobru.)</li>
+                    <li>
+                      PERIOD - u poljima <em>Od: i do:</em> definissemo datume
+                      pocetka i kraja obustave (Za pocetak obustave uvek se
+                      unosi prvi dan u mesecu za period/mesec u kojem obustava
+                      treba da pocne, npr. <em>Od: 01092023</em> - ova obustava
+                      pocinje da se odbija od septembarske plate u 2023. godini
+                      u oktobru.)
+                    </li>
                     <li>KREIRAJ (<em>btn</em>)</li>
                     <li>Datum placanja (<em>kartica</em>)</li>
-                    <li>Ukupan dug (<em>polje</em>) - usnosi se ukupan dug obustave</li>
-                    <li>Iznos rate (<em>polje</em>) - unosi se iznos rate (Ukoliko se obustava odbija od oba dela plate, poterbno je iznos rate preracunati, tj. podeliti na dva dela. Broj rata u ISKRi se izracunava automatski.)</li>
-                    <li>Model i poziv na broj (<em>polja</em>) - unose se poziv na broj naznacen u obustavi/administrativnoj zabrani i/ili model</li>
+                    <li>
+                      Ukupan dug (<em>polje</em>) - usnosi se ukupan dug
+                      obustave
+                    </li>
+                    <li>
+                      Iznos rate (<em>polje</em>) - unosi se iznos rate (Ukoliko
+                      se obustava odbija od oba dela plate, poterbno je iznos
+                      rate preracunati, tj. podeliti na dva dela. Broj rata u
+                      ISKRi se izracunava automatski.)
+                    </li>
+                    <li>
+                      Model i poziv na broj (<em>polja</em>) - unose se poziv na
+                      broj naznacen u obustavi/administrativnoj zabrani i/ili
+                      model
+                    </li>
                     <li>ENTER (<em>keybord/btn</em>)</li>
-                    <li>Vrsta obracuna (<em>kartica</em>)
+                    <li>
+                      Vrsta obracuna (<em>kartica</em>)
                       <ul>
                         <li>Akontacija</li>
                         <li>Konacan obracun</li>
                         <li>Bolovanje > 30 dana</li>
                       </ul>
                     </li>
-                    <li>Primalac (<em>kartica</em>)
+                    <li>
+                      Primalac (<em>kartica</em>)
                       <ul>
-                        <li>Kluc primaoca placanja (<em>polje</em>) - unosi se sifra kreditora koju smo zapisali prilikom provere kreditora</li>
+                        <li>
+                          Kluc primaoca placanja (<em>polje</em>) - unosi se
+                          sifra kreditora koju smo zapisali prilikom provere
+                          kreditora
+                        </li>
                         <li>ENTER (<em>btn</em>)</li>
                       </ul>
                     </li>
                     <li>SACUVAJ (<em>btn</em>)</li>
-                    <li>Prikazi (<em>opcija/btn</em>) - prvera/kontrola unete obustave</li>
+                    <li>
+                      Prikazi (<em>opcija/btn</em>) - prvera/kontrola unete
+                      obustave
+                    </li>
                   </ul>
                 </li>
               </ol>
@@ -327,508 +362,205 @@
           </section>
         </article>
 
-        <!-- <article class="content">
+        <!-- content articles -->
+        <article class="content">
           <section>
-            <h3 id="kontni-ovir">Kontni okvir</h3>
-            <table>
-              <tbody>
-                <tr>
-                  <td>0</td>
-                  <td>- osnovna sredstva - upisani a neuplaceni kapital</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>- zalihe - zalihe i stalna sredstva namenjena prodaji</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>
-                    - kupci, blagajna, tekuci racun - kratkorocna potrazivanja i
-                    plasmani, novcana sredstva i aktivna vremenska razgranicenja
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>- kapital</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>
-                    - dobavljaci, obaveze - rezervisanja, obaveze i pasivna
-                    vremenska razgranicenja
-                  </td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>- rashodi</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>- prihodi</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>- otvaranje i zakljucak racuna stanja i uspeha</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>- vanbilansna evidencija</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>- obracun troskova i ucinaka</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+            <h3 id="generisanje-karneta">Generisanje karneta</h3>
 
-          <section>
-            <h3 id="konta">Konta</h3>
-            <table>
-              <tbody>
-                <tr>
-                  <td>243400</td>
-                  <td>- uplata pazara / sifra 11</td>
-                </tr>
-                <tr>
-                  <td>240000</td>
-                  <td>- dinarski cekovi</td>
-                </tr>
-                <tr>
-                  <td>553000</td>
-                  <td>- troskovi platnog prometa / provizija banke</td>
-                </tr>
-                <tr>
-                  <td>241900</td>
-                  <td>- prelazni racun gotovine</td>
-                </tr>
-                <tr>
-                  <td>243000</td>
-                  <td>- glavna blagajna</td>
-                </tr>
-                <tr>
-                  <td>429000</td>
-                  <td>- ostale kratkorocne finansijske obaveze - overdraft</td>
-                </tr>
-                <tr>
-                  <td>429200</td>
-                  <td>- pozajmica i povracaj pozajmice</td>
-                </tr>
-                <tr>
-                  <td>240100</td>
-                  <td>- platne kartice - uplata karticom potrazuje</td>
-                </tr>
-                <tr>
-                  <td>439300</td>
-                  <td>
-                    - obaveze prema biznis kartici - placanja karticom duguje
-                  </td>
-                </tr>
-                <tr>
-                  <td>463000</td>
-                  <td>
-                    - obaveza prema zaposlenima za naknadu troskova na sluzbenom
-                    putu
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section>
-            <h3 id="ulaz-materijala">Knjizenje ulaza materijala</h3>
-            <ol>
-              <li>Izabrati komitenta po obracunu</li>
-              <li>Promene -> Nalog za knjizenje sa datumom knjizenja</li>
-              <li>Izabrati nalog/datum prema periodu/datumu obracuna</li>
-              <li>Knjiziti po licu koje predaje materijal</li>
-            </ol>
-            <table>
-              <tbody>
-                <tr>
-                  <td>101000</td>
-                  <td>- materijal za izradu</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>287277</td>
-                  <td>- PDV nispravni neplacena nadoknada poljoprivredniku</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>435000</td>
-                  <td>- Dobavljaci</td>
-                </tr>
-              </tbody>
-            </table>
-            <ol start="5">
+            <ul>
+              <li>Administrator obracuna plata</li>
+              <li>Maska za unos karneta</li>
+              <li>Odrzavanje karneta (<em>strana</em>)</li>
               <li>
-                Nakon kljizenja ulaza materijala proknjiziti PDV na nalogu gde
-                su dobavljaci placeni
+                Obavezni podaci
+                <ul>
+                  <li>Period obracuna - 09</li>
+                  <li>Godina - 2023</li>
+                  <li>Kadrovska oblast - OKH_</li>
+                  <li>Kadrovska pod oblast - 0910</li>
+                </ul>
+              </li>
+              <li>
+                rezimi rada
+                <ul>
+                  <li>Pregled i azuriranje</li>
+                  <li>Inicijalno kreiranje karneta</li>
+                  <li>Ucitaj podatke iz Excel-a</li>
+                </ul>
+              </li>
+              <li>
+                Prvi put, u mesecu, kada se generise karnet potrebno je izabrati
+                opciju <em>Inicijalno kreiranje karneta</em>. Svaki naredni put,
+                u mesecu, karnetu se pristupa kroz opciju
+                <em>Pregled i azuriranje podataka</em>.
+              </li>
+              <li>IZVRSI (<em>btn</em>)</li>
+              <li>
+                U karnet za obracun zarada se unose/preracunavaju samo sati. Sve
+                ostale podatke ISKRA/aplikacija preracunava i prikazuje na
+                osnovu predhodno unetih maticnih/kadrovskih, obracunskih
+                podataka.
+              </li>
+              <li>Unos sati u karnet</li>
+              <li>
+                Proveri podatke (<em>btn</em>) - ukoliko su svi podaci uneti u
+                karnet izpravno uneti kolona <em>fond sati</em> ce biti obojena
+                svetlo plavom ili sivom bojom a <em>kadrovski brojevi</em> ce
+                biti obojeni zelenom bojom
+              </li>
+              <li>SACUVAJ (<em>btn</em>)</li>
+              <li>NASTAVI - u poruci <em>Uspesno snimljeni podaci</em></li>
+            </ul>
+          </section>
+          <section>
+            <p>
+              Karnet za unso sati za obracun zarade je moguce popuniti na dva
+              nacina:
+            </p>
+            <ol style="list-style-type: lower-latin">
+              <li>
+                Rucno - kroz ISKRA aplikaciju, tj. kroz karnet jednom po jednom
+                radniku, ili
+              </li>
+              <li>
+                Uvesti Excel tabelu sa popunjenim satima, sa lokalnog racunara
               </li>
             </ol>
-            <table>
-              <tbody>
-                <tr>
-                  <td>287000</td>
-                  <td>- PDV nadoknada poljoprivrednicima</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>287277</td>
-                  <td>- PDV nispravni neplacena nadoknada poljoprivredniku</td>
-                </tr>
-              </tbody>
-            </table>
-            <ol start="6">
-              <li>Proveriti kartice konta u glavnoj knjizi.</li>
+          </section>
+          <section>
+            <h4>Popunjavanje karneta uz pomoc Excel tabele:</h4>
+            <ul>
+              <li>
+                Kreirati inicijalno karnet i nakon <em>izvrsenja</em> dobiti
+                tabelu u ISKRi za unos sati
+              </li>
+              <li>Izvezi listu za unos (<em>btn</em>)</li>
+              <li>Upisati nzaiv excel dokumenta koji se izvozi</li>
+              <li>
+                Oznaciti opciju
+                <em>Sascuvajte kopiju u originalni sistem fajla</em> (ako nije
+                automatski oznacena)
+              </li>
+              <li>IZABERI (<em>btn</em>)</li>
+              <li>
+                Nakon popunjavanja podataka za sate u zivezenu tabelu na
+                lokalnom racunaru, potrebno je tu tabelu ucitati u ISKRu
+              </li>
+              <li>Administrator obracuna plata</li>
+              <li>Maska za unos karneta - skole</li>
+              <li>
+                Odrzavanje karneta (strana) - uneti obavezne podatke, a u delu
+                <em>rezim rada</em> izabrati opciju
+                <em>Ucitaj podatke iz excela-a</em>
+              </li>
+              <li>IZVRSI (<em>btn</em>)</li>
+              <li>Ucitati tabelu sa lokalnog racunara</li>
+              <li>Proveri podatke (<em>btn</em>)</li>
+              <li>
+                SACUVAJ (<em>btn</em>) - ako su provereni podaci <em>zeleni</em>
+              </li>
+              <li>NASTAVI - u poruci <em>Uspesno snimljeni podaci</em></li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- content articles -->
+        <article class="content">
+          <section>
+            <h3 id="potvrda-unosa-podataka">
+              Potvrda unosa kadrovskih/vremenskih podataka
+            </h3>
+            <p>
+              Signalizirati/poslati email referentu u Trezoru da ssmo uspesno
+              uneli maticne podatke i kreirali karnet sa satima.
+            </p>
+            <ul>
+              <li>Administrator obracuna plata</li>
+              <li>Potvrda unosa kadrovskih/vremenskih podataka</li>
+              <li>
+                Pracenje unosa maticnih podataka (strana)
+                <ul>
+                  <li>Kadrovska oblast: <em>OKH_</em></li>
+                  <li>Vrsta obracuna: <em>izbor sifre</em></li>
+                  <li>Period obracuna: <em>09</em> | <em>2023</em></li>
+                </ul>
+              </li>
+              <li>KREIRAJ (<em>opcija</em>)</li>
+              <li>
+                Status unosa podataka - obeleziti/kliknuti na sve tri opcije
+                <ul>
+                  <li>Unet karnet</li>
+                  <li>Uneti dodaci karneta</li>
+                  <li>Zavrsen unos maticnih podataka</li>
+                </ul>
+              </li>
+              <li>SACUVAJ (<em>btn</em>)</li>
+            </ul>
+            <p>
+              Radnje koje referent obavlja nakon potvrde unosa kadrovskih
+              vremenskih podataka:
+            </p>
+            <ol style="list-style-type: lower-latin">
+              <li>
+                Zakljucavanje podataka (karneta) - vise nije moguc unos maticnih
+                podataka i izmena karneta
+              </li>
+              <li>
+                Kreiranje parametara/sifre/broja obracuna koji se trenutno vrsi
+                (za svaku isplatu se vrsi razliciti parametar)
+              </li>
             </ol>
           </section>
+        </article>
 
+        <!-- content articles -->
+        <article class="content">
           <section>
-            <h3 id="knjizenje-blagajne">
-              Knjizenje blagajne - isplata gotovine
+            <h3 id="pracenje-statusa-parametara">
+              Pracenje statusa parametara
             </h3>
-            <table>
-              <tbody>
-                <tr>
-                  <td>241900</td>
-                  <td>- prelazni racun - gotovina</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>2410##</td>
-                  <td>- tekuci racun banke - po izvodu</td>
-                </tr>
-              </tbody>
-            </table>
-            <table>
-              <tbody>
-                <tr>
-                  <td>243000</td>
-                  <td>- glavna blagajna</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>241900</td>
-                  <td>- prelazni racun - gotovina</td>
-                </tr>
-              </tbody>
-            </table>
-            <table>
-              <tbody>
-                <tr>
-                  <td>429200</td>
-                  <td>- obaveze prema osnivacu predzeca po osnovu pozajmice</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>243000</td>
-                  <td>- glavna blagajna</td>
-                </tr>
-              </tbody>
-            </table>
+            <p>
+              Signalizirati/poslati email referentu u Trezoru da ssmo uspesno
+              uneli maticne podatke i kreirali karnet sa satima.
+            </p>
+            <ul>
+              <li>Administrator obracuna plata</li>
+              <li>Potvrda unosa kadrovskih/vremenskih podataka</li>
+              <li>
+                Pracenje unosa maticnih podataka (strana)
+                <ul>
+                  <li>Kadrovska oblast: <em>OKH_</em></li>
+                  <li>Vrsta obracuna: <em>izbor sifre</em></li>
+                  <li>Period obracuna: <em>09</em> | <em>2023</em></li>
+                </ul>
+              </li>
+              <li>KREIRAJ (<em>opcija</em>)</li>
+              <li>
+                Status unosa podataka - obeleziti/kliknuti na sve tri opcije
+                <ul>
+                  <li>Unet karnet</li>
+                  <li>Uneti dodaci karneta</li>
+                  <li>Zavrsen unos maticnih podataka</li>
+                </ul>
+              </li>
+              <li>SACUVAJ (<em>btn</em>)</li>
+            </ul>
+            <p>
+              Radnje koje referent obavlja nakon potvrde unosa kadrovskih
+              vremenskih podataka:
+            </p>
+            <ol style="list-style-type: lower-latin">
+              <li>
+                Zakljucavanje podataka (karneta) - vise nije moguc unos maticnih
+                podataka i izmena karneta
+              </li>
+              <li>
+                Kreiranje parametara/sifre/broja obracuna koji se trenutno vrsi
+                (za svaku isplatu se vrsi razliciti parametar)
+              </li>
+            </ol>
           </section>
-
-          <section>
-            <h3 id="knjizenje-ugovor-o-delu">
-              Knjizenje po osnovu ugovora o delu
-            </h3>
-            <table>
-              <tbody>
-                <tr>
-                  <td>522000</td>
-                  <td>- troskovi naknade po osnovu ugovora o delu</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>465000</td>
-                  <td>- obaveze za naknadu po ugovoru o delu</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>489200</td>
-                  <td>
-                    - obaveze za porez na isplate naknade po ugovoru o delu
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>489800</td>
-                  <td>- obaveze za doprinose za PIO</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section>
-            <h3 id="invoitix">Invoitix - promet u devizama</h3>
-            <table>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>228000</td>
-                  <td>- ostala kratkorocna potrazivanja</td>
-                </tr>
-                <tr>
-                  <td>244000</td>
-                  <td>/ 244000</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>228000</td>
-                  <td>- za proviziju</td>
-                </tr>
-                <tr>
-                  <td>553100</td>
-                  <td>- troskovi platnog prometa sa inostranstvom</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section>
-            <h3 id="prodaja-deviza">Prodaja deviza</h3>
-            <h5><em>Izvod deviznog racuna</em></h5>
-            <table>
-              <tbody>
-                <tr>
-                  <td>563100</td>
-                  <td>- negativne kursne razlike u stranoj valuti na dan</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>244900</td>
-                  <td>- prelazni devizni racun</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>244004</td>
-                  <td>- devizni racun - Erste bank</td>
-                </tr>
-              </tbody>
-            </table>
-            <h5><em>Izvod dinarskog racuna</em></h5>
-            <table>
-              <tbody>
-                <tr>
-                  <td>244900</td>
-                  <td>- iznos bez negativne kursne razlike</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>241013 - dinarski tekuci racun - Ereste bank</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section>
-            <h3 id="knjizenje-obracuna-zarada">Knjizenje obracuna zarada</h3>
-            <table>
-              <tbody>
-                <tr>
-                  <td>520000</td>
-                  <td>- zarade bruto</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>450000</td>
-                  <td>- obaveze za neto zarade i naknade zarada koje treba</td>
-                </tr>
-                <tr>
-                  <td>520001</td>
-                  <td>- porez na zarade</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>451000</td>
-                  <td>- obaveze za porez na zarade</td>
-                </tr>
-                <tr>
-                  <td>520003</td>
-                  <td>- doprinosi za zdravstvo na teret zaposlenog</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>452003</td>
-                  <td>- obaveze za zdravstvo na teret zapolsenih</td>
-                </tr>
-                <tr>
-                  <td>520004</td>
-                  <td>- doprinosi za osiguranje na teret zaposlenog</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>452004</td>
-                  <td>
-                    - obaveze za doprinose za osiguranje od nezaposlenosti na
-                    teret zapolsenih
-                  </td>
-                </tr>
-                <tr>
-                  <td>520005</td>
-                  <td>- troskovi doprinosa PIO vlasnika</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>452005</td>
-                  <td>- obaveze za doprinose PIO vlasnika</td>
-                </tr>
-                <tr>
-                  <td>521003</td>
-                  <td>
-                    - troskovi doprinosa za zdravstvo na zaradu (poslodavac)
-                  </td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>453103</td>
-                  <td>- obaveze za doprinose za zdravstvo (poslodavac)</td>
-                </tr>
-                <tr>
-                  <td>521001</td>
-                  <td>- troskovi doprinosa PIO na zaradu vlasnika</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>453101</td>
-                  <td>- obaveze za doprinose za PIO zaradu vlasnika</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section>
-            <h3 id="isplata-zarada">Knjizenje isplate zarada</h3>
-            <table>
-              <tbody>
-                <tr>
-                  <td>450000</td>
-                  <td>- obaveze za neto zarade</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>451000</td>
-                  <td>- obaveze za porez na zarade</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>452003</td>
-                  <td>- obaveze za zdravstvo na teret zaposlenih</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>452004</td>
-                  <td>
-                    - obaveze za doprinose za osiguranje od nezaposlenosti na
-                    teret zaposlenih
-                  </td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>452005</td>
-                  <td>- obaveze za doprinose za PIO na teret zaposlenih</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>453103</td>
-                  <td>
-                    - obaveze za doprinose za zadravstvo na teret poslodavca
-                  </td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>453101</td>
-                  <td>- obaveze za doprinose za PIO na teret poslodavca</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section>
-            <h3 id="licna-zarada">Knjizenje doprinosa za licnu zaradu</h3>
-            <table>
-              <tbody>
-                <tr>
-                  <td>451100</td>
-                  <td>- porez na licnu zaradu preduzetnika</td>
-                </tr>
-                <tr>
-                  <td>483100</td>
-                  <td>- obaveze za PIO preduzetnika</td>
-                </tr>
-                <tr>
-                  <td>483110</td>
-                  <td>- obaveze za zdravstvo preduzetnika</td>
-                </tr>
-                <tr>
-                  <td>483120</td>
-                  <td>- obaveze za nezaposlenost preduzetnika</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </article> -->
+        </article>
       </div>
     </main>
 
