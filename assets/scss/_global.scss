@@ -279,6 +279,20 @@ main {
   }
 }
 
+/*** Tab Content ***/
+
+.tab-content {
+
+  section {
+    display: none;
+  }
+
+  input:checked + section {
+      display: block;
+    } 
+  }
+
+
 /*** Footer ***/
 
 footer {
