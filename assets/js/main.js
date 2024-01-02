@@ -33,3 +33,20 @@ for (let i = 0; i < navbar_links.length; i++) {
 }
 
 /* CONTENT TABS */
+
+/* variables */
+const tabBtns = document.querySelectorAll(".tab-btn");
+const tabContent = document.querySelectorAll(".tab-content");
+
+/* events */
+for (let i = 0; i < tabBtns.length; i++) {
+  tabBtns[i].addEventListener("click", function () {
+    if (tabContent[i].className === "tab-content") {
+      tabContent[i].classList.add("active-tab");
+      tabBtns[i].classList.add("active-btn");
+    } else {
+      tabContent[i].classList.remove("active-tab");
+      tabBtns[i].classList.remove("active-btn");
+    }
+  });
+}

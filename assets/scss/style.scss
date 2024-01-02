@@ -42,3 +42,45 @@
     }
   }
 }
+
+/*** School Page ***/
+
+.tab-btns {
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  display: flex;
+  /* justify-content: center;
+  gap: 0.5rem; */
+}
+
+.tab-btn {
+  margin: 0;
+  padding: 1rem;
+border: none;
+}
+
+.tab-btn:hover {
+  cursor: pointer;
+}
+
+.tab-content {
+  display: none;
+  flex-direction: column;
+}
+
+.tab-content h3 {
+  padding: 1rem 0.5rem 0.25rem 0.5rem;
+}
+
+.tab-content p {
+  padding: 0.25rem 0.5rem;
+}
+
+.active-btn {
+  background-color: dodgerblue;
+  color: whitesmoke;
+}
+
+.active-tab {
+  display: flex;
+}
