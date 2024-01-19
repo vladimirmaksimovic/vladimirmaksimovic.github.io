@@ -23,6 +23,23 @@ html {
   font-family: $primary-font-family;
   font-size: 16px;
   scroll-behavior: smooth;
+
+  @media (max-width: 960px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 8px;
+  }
+
 }
 
 body {
@@ -74,6 +91,7 @@ h3 {
   .content {
     padding: 0 0.5rem;
     border-bottom: 1px solid $grey;
+    text-align: justify;
 
     ul, ol {
       padding: 0 0 0.5rem 2rem;
