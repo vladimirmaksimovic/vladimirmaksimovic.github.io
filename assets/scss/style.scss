@@ -2,9 +2,17 @@
 @import "variables";
 @import "global";
 
-
-
 /*** Home Page ***/
+
+.container {
+  margin: 2rem 0;
+  @include flex-center;
+  border-radius: 5px;
+
+  iframe {
+    width: 60%;
+  }
+}
 
 /*** About Me Page ***/
 
