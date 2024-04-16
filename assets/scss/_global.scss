@@ -209,33 +209,41 @@ header {
       li {
         padding: 0 0.5rem;
 
-        
-
-        /* a {
-          padding: 0 0.5rem;
-        text-decoration: none;
-        font-weight: 500; 
-          color: $white;*/
-
           a:hover {
             color: $blue;
             }
 
           &:hover {
-            
-            .reminder-nav {
-              width: fit-content;
-              /* padding: 0.5rem 0; */
-              position: absolute;
-              /* top: 3rem; */
-              display: flex;
-              flex-direction: column;
-              /* display: grid;
-              grid-template-columns: repeat(2, 1fr); */
-              gap: 0.25rem;
 
-              li {
+            .wrapper {
+              width: 5rem;
+              padding: 1.2rem 0;
+              position: absolute;
+              top: 2.5rem;
+              cursor: pointer;
+              transition: 0.6s ease-in-out;
+
+              .reminder-nav {
+                width: max-content;
                 padding: 0.5rem;
+                /* position: absolute;
+                top: 4rem;
+                display: flex;
+                flex-direction: column; */
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.25rem;
+                border-radius: $border-radius;
+
+                li {
+                  padding: 0.5rem;
+
+                  &:hover {
+                    background-color: $light-grey;
+                    border-radius: $border-radius;
+                  }
+
+                }
               }
             }
           }
@@ -247,8 +255,8 @@ header {
 .reminder-nav {
   display: none;
   /* background-color: $white; */
-  background-color: $transparent-black;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: $white;
+  box-shadow: $deep-purple 0px 3px 8px;
 
   /* &:hover {
     display: flex;

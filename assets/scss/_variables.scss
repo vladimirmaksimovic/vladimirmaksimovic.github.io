@@ -9,13 +9,12 @@ $blue: #0066ff;
 $lion: #ffd900;
 $transparent-blue: #0066ff3f;
 $transparent-black: #11111124;
+$deep-purple: #8911c0d9;
 
 /** font **/
 /* $primary-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 $primary-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', ;
 $secondary-font-family: 'Times New Roman', Times, serif;
-
-
 
 /** responsive sizes **/
 $mobile-max: 640px;
@@ -24,6 +23,8 @@ $tablet-max: 1007px;
 $desktop-min: 1008px;
 $desktop-mid: 1440px;
 $desktop-max: 1920px;
+
+$border-radius: 5px;
 
 /** mixins **/
 
