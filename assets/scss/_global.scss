@@ -221,7 +221,7 @@ header {
               position: absolute;
               top: 2.5rem;
               cursor: pointer;
-              transition: 0.6s ease-in-out;
+              /* transition: 0.6s ease-in-out; */
 
               .reminder-nav {
                 width: max-content;
@@ -231,7 +231,8 @@ header {
                 display: flex;
                 flex-direction: column; */
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                /* grid-template-columns: repeat(2, 1fr); */
+                grid-template-columns: 1fr;
                 gap: 0.25rem;
                 border-radius: $border-radius;
 
